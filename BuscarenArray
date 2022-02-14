@@ -1,0 +1,29 @@
+package recursividadbuscarenarray;
+
+
+public class RecursividadBuscarenArray {
+
+  
+    public static void main(String[] args) {
+      int[] numeros = {5, 2, 16, 7, 8};
+        
+        buscar(numeros,16,0);
+        
+    }
+
+    private static void buscar(int[] numeros, int NumeroaBuscar, int index) {
+        
+        if (index!= numeros.length){
+            if(numeros[index]==NumeroaBuscar){
+                System.out.println("El numero "+NumeroaBuscar+" es troba a l'index "+index);
+            }else{
+                buscar(numeros, NumeroaBuscar, index+1);
+            }
+            
+            
+            
+            
+        }
+    }
+    
+}
