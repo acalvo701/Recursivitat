@@ -1,0 +1,33 @@
+
+package recursividadescriurefibonnacci;
+
+
+public class RecursividadEscriureFibonnacci {
+
+
+    public static void main(String[] args) {
+       
+        
+        EscriureFibonacci(0,20);//Primer digit es la posicio inicial de la sequencia, segon digit es fins 
+                                //A quina posicio de la sequencia volem arribar.
+        
+    }
+
+       private static int Fibonacci(int i) {
+       
+        if(i==0){
+            return 0;
+        }else if(i==1){
+            return 1;
+        }else{
+        return Fibonacci(i-1)+ Fibonacci(i-2);
+        }
+    }
+
+    private static void EscriureFibonacci(int inici, int llargada) {
+        if(inici<=llargada){
+            System.out.print(Fibonacci(inici)+" ");
+            EscriureFibonacci(inici+1,llargada);
+        }
+    }
+}
