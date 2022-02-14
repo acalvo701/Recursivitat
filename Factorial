@@ -1,0 +1,22 @@
+package recursividadfactorial;
+
+public class RecursividadFactorial {
+
+   
+    public static void main(String[] args) {
+       
+        System.out.println(factorial(-1));
+    }
+
+    private static int factorial(int i) {
+        int resultado;
+       if(i>0){
+           resultado = i* factorial(i-1);
+           return resultado;
+       }
+        
+        
+        return 1;
+    }
+    
+}
