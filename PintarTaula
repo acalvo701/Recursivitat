@@ -4,7 +4,11 @@ public class RecursividadRecorrerArray {
 
     public static void main(String[] args) {
 
-        int[][] taula = {{1, 5, 9}, {3, 12, 63}, {6, 89, 4}};
+        int[][] taula = {
+                         {1, 5, 9,7,13}, 
+                         {3, 12, 63}, 
+                         {6, 89}
+                        };
 
         recorrerTaula(taula, 0, 0);
 
@@ -14,10 +18,10 @@ public class RecursividadRecorrerArray {
         System.out.print(taula[i][j] + "\t");
 
         if (i != taula.length - 1 || j != taula[i].length - 1) {//Posem taula[i].length per si hi haguessin mes columnes que files
-            if (j == taula.length-1) {
+            if (j == taula[i].length-1) {           //Posem length-1 xk no se'ns sorti de l'array
                 j = 0;
                 i++;
-                System.out.println();
+                System.out.println();               //Cada cop que cambia de fila fem un println
             } else {
                 j++;
             }
