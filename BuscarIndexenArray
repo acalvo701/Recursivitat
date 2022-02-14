@@ -1,0 +1,36 @@
+package recursividadbuscarindicearray;
+
+public class RecursividadBuscarIndiceArray {
+
+    public static void main(String[] args) {
+
+        int[] numeros = {5, 2, 16, 7, 8};
+
+        int posicio = buscar(numeros, 32, 0);
+        if (posicio == -1) {
+            System.out.println("No s'ha trobat el numero");
+        } else {
+            System.out.print("El numero s'ha trobat a la posicio " + posicio);
+        }
+    }
+
+    private static int buscar(int[] numeros, int NumeroaBuscar, int index) {
+
+        if (index != numeros.length) {
+                
+            if(numeros[index]==NumeroaBuscar){
+                return index;
+            }else{
+                return buscar(numeros, NumeroaBuscar, index+1);
+            }
+            
+            
+            
+            
+        } else {
+            return -1;
+        }
+
+    }
+
+}
