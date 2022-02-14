@@ -1,0 +1,29 @@
+
+package recursividadinvertirnumero;
+
+
+public class RecursividadInvertirNumero {
+
+   
+    public static void main(String[] args) {
+       
+        invertirNumero(145);
+        
+        
+    }
+
+    private static void invertirNumero(int numero) {
+       
+       if(numero!=0){
+           System.out.print(numero%10); 
+        
+           invertirNumero(numero/10);
+        }
+       
+    }
+        
+        
+        
+    }
+    
+
