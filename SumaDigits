@@ -1,0 +1,23 @@
+package recursividadsumardigits;
+
+public class RecursividadSumarDigits {
+   
+    public static void main(String[] args) {
+        
+
+        System.out.println(sumarDigits(453));
+    }
+
+    private static int sumarDigits(int i) {
+        
+        if(i < 10){
+            return i;
+        }else{
+            return i%10 + sumarDigits(i/10);  //El numero 34, em retorna 4 + (sumardigits(3) que ja surt al primer if i torna 3) 
+        }
+        
+        
+        
+    }
+    
+}
