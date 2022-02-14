@@ -1,0 +1,25 @@
+package recusividadfibonacci;
+
+public class RecusividadFibonacci {
+
+   
+    public static void main(String[] args) {
+       
+        // 1 1 2 3 5 8 13 21 34
+       System.out.println(Fibonacci(8));//M'ha de tornar el valor 21;
+        
+ 
+    }
+
+    private static int Fibonacci(int i) {
+       
+        if(i==0){
+            return 0;
+        }else if(i==1){
+            return 1;
+        }else{
+        return Fibonacci(i-1)+ Fibonacci(i-2);
+        }
+    }
+    
+}
