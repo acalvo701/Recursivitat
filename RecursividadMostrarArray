@@ -1,0 +1,20 @@
+package recursividadarray;
+
+public class RecursividadArray {
+
+    public static void main(String[] args) {
+        int[] numeros = {5, 2, 16, 7, 8};
+
+        mostrarArray(numeros, 0);
+
+    }
+
+    private static void mostrarArray(int[] numeros, int index) {
+
+        if (index != numeros.length) {
+
+            System.out.print(numeros[index]+" ");
+            mostrarArray(numeros, index + 1);
+        }
+    }
+}
