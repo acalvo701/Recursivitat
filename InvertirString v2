@@ -1,0 +1,26 @@
+
+package recursividadinvertirstring;
+
+
+public class RecursividadInvertirString {
+
+
+    public static void main(String[] args) {
+       String palabra = "Palabras";
+        System.out.println(invertirParaula(palabra));
+    }
+    
+    private static String invertirParaula(String paraula) {
+        
+        if(paraula.length()==0){
+            return "";
+          
+        }else{
+            return paraula.charAt(paraula.length()-1) + (invertirParaula(paraula.substring(0,paraula.length()-1)));
+                   
+        }
+    }
+    
+    
+    
+}
