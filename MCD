@@ -1,0 +1,24 @@
+package recursividadmcd;
+
+
+public class RecursividadMCD {
+
+ 
+    
+    public static void main(String[] args) {
+       
+        System.out.println(mcd(24,16));
+        
+        
+        
+    }
+
+    private static int mcd(int i, int i0) {
+        if(i0 == 0){
+            return i;
+        }else{
+            return mcd(i0, i%i0);
+        }
+    }
+    
+}
